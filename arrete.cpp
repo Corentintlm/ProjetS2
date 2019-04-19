@@ -23,3 +23,33 @@ void Arrete::dessiner(Svgfile& svgout)
    //svgout.addText(x-20,y-15,m_p2,noir);
    svgout.addText(x,y,m_j,vert);
 }
+
+
+float Arrete::getm_p1()
+{
+    return m_p1;
+}
+float Arrete::getm_p2()
+{
+    return m_p2;
+}
+int Arrete::getm_x1()
+{
+    return m_x1;
+}
+int Arrete::getm_x2()
+{
+    return m_x2;
+}
+int Arrete::getm_y1()
+{
+    return m_y1;
+}
+int Arrete::getm_y2()
+{
+    return m_y2;
+}
+int Arrete::getm_j()
+{
+    return m_j;
+}

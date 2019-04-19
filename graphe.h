@@ -10,10 +10,14 @@ class graphe
 {
 public:
     graphe(std::string,std::string);
-    void dessiner(Svgfile& svgout);
+    void dessiner(Svgfile& svgout,int);
+    std::vector<Arrete> kruskalp1();
+    std::vector<Arrete> kruskalp2();
+    void kruskal(int);
 protected:
     std::vector<Sommet> m_sommet;
     std::vector<Arrete> m_arrete;
+    std::vector<Arrete> m_last;
 };
 
 #endif // GRAPHE_H_INCLUDED

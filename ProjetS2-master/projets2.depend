@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1555669074 source:c:\users\hippolyte\desktop\projets2-master\arrete.cpp
+	"arrete.h"
+	<iostream>
+	"couleur.h"
+
+1555669074 c:\users\hippolyte\desktop\projets2-master\arrete.h
+	"svgfile.h"
+	<vector>
+	"sommet.h"
+
+1555669074 c:\users\hippolyte\desktop\projets2-master\svgfile.h
+	<string>
+	<fstream>
+	<set>
+
+1555669074 c:\users\hippolyte\desktop\projets2-master\sommet.h
+	"svgfile.h"
+
+1555669074 c:\users\hippolyte\desktop\projets2-master\couleur.h
+	<string>
+	<cstdint>
+
+1555669074 source:c:\users\hippolyte\desktop\projets2-master\couleur.cpp
+	"couleur.h"
+	"svgfile.h"
+	"util.h"
+	<iostream>
+
+1555669074 c:\users\hippolyte\desktop\projets2-master\util.h
+	<random>
+	<string>
+
+1555693625 source:c:\users\hippolyte\desktop\projets2-master\pareto.cpp
+	"pareto.h"
+	"couleur.h"
+	<iostream>
+
+1555687814 c:\users\hippolyte\desktop\projets2-master\pareto.h
+	"svgfile.h"
+	<vector>
+
+1555669074 source:c:\users\hippolyte\desktop\projets2-master\sommet.cpp
+	"sommet.h"
+	"couleur.h"
+	<iostream>
+
+1555669074 source:c:\users\hippolyte\desktop\projets2-master\svgfile.cpp
+	"svgfile.h"
+	<iostream>
+	<sstream>
+
+1555693847 source:c:\users\hippolyte\desktop\projets2-master\main.cpp
+	<iostream>
+	"graphe.h"
+	"pareto.h"
+
+1555669642 c:\users\hippolyte\desktop\projets2-master\graphe.h
+	"sommet.h"
+	"pareto.h"
+	"svgfile.h"
+	"arrete.h"
+	<vector>
+
+1555669074 source:c:\users\hippolyte\desktop\projets2-master\util.cpp
+	"util.h"
+	<random>
+	<ctime>
+	<iostream>
+	<cstdio>
+	<streambuf>
+	<vector>
+	<cstdlib>
+	<cstdio>
+	<algorithm>
+	<cstring>
+	<iostream>
+	<thread>
+	"util.h"
+	<windows.h>
+
+1555693517 source:c:\users\hippolyte\desktop\projets2-master\graphe.cpp
+	<fstream>
+	<iostream>
+	<vector>
+	<algorithm>
+	"graphe.h"
+

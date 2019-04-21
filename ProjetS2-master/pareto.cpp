@@ -78,16 +78,16 @@ void Pareto::dessiner(Svgfile& svgout)
     svgout.addTriangle(500, 90, 495, 100, 505, 100, noir);
     svgout.addLine(500, 400, (500/plusPetitX)*plusGrandX+50, 400, "blue");  //abscisse
     svgout.addTriangle((500/plusPetitX)*plusGrandX+60-25, 400, 50+(500/plusPetitX)*plusGrandX-25, 395, 50+(500/plusPetitX)*plusGrandX-25, 405, "blue");
-    std::cout << (plusGrandX*500)+10 << " " << 400 << std::endl;
-    std::cout << (plusGrandX*500) << " " << 395 << std::endl;
-    std::cout << (plusGrandX*500) << " " << 405 << std::endl;
+//    std::cout << (plusGrandX*500)+10 << " " << 400 << std::endl;
+//    std::cout << (plusGrandX*500) << " " << 395 << std::endl;
+//    std::cout << (plusGrandX*500) << " " << 405 << std::endl;
 
 
 
     //std::cout << "le plus haut : " << t << std::endl;
     i=0;
 
-    std::cout << "plus grand y : " << plusGrandY << std::endl;
+//    std::cout << "plus grand y : " << plusGrandY << std::endl;
 
     int fe1 = 0;
     int fe2 = 0;
@@ -98,6 +98,7 @@ void Pareto::dessiner(Svgfile& svgout)
     int l = 0;
     int bzje = 0;
     int compt = 0;
+    int op = 0;
     for(auto ez : m_poids)
     {
         bzje++;
@@ -105,26 +106,31 @@ void Pareto::dessiner(Svgfile& svgout)
         fe2 = ez[i+1];
         for(auto gg : m_poids)
         {
-            if((fe1 <= gg[l]) || (fe2 <= gg[l+1]))
+            if(((fe1 <= gg[l]) || (fe2 < gg[l+1])) && ((fe1 < gg[l]) || (fe2 <= gg[l+1])))
             {
                 compt+=1;
+                l+=2;
             }
             else
+            {
                 break;
-            l+=2;
+                //i = l;
+            }
             //std::cout << bzje << std::endl;
         }
+        //i = l;
         l=0;
-        if(compt == m_poids.size()-1)
+        if(compt >= m_poids.size()-1)
         {
-            //std::cout << "compt : " << compt << "poids size : " << m_poids.size() << std::endl;
-            svgout.addDisk((500/plusPetitX)*ez[i]+50, ((-ez[i+1] + plusPetitY)*10) + 370, 5, "green");
-            int op = 0;
+//            std::cout << "compt : " << compt << "poids size : " << m_poids.size() << std::endl;
+            svgout.addDisk((500/plusPetitX)*ez[i]+50, ((-ez[i+1] + plusPetitY)*10) + 370, 3, "green");
             op++;
-            std::cout << op << std::endl;
+            //std::cout << op << std::endl;
         }
         else
+        {
             svgout.addDisk((500/plusPetitX)*ez[i]+50, ((-ez[i+1] + plusPetitY)*10) + 370, 3, "red");
+        }
         compt = 0;
         i+=2;
     }

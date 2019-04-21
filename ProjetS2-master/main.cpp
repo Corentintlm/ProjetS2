@@ -9,16 +9,19 @@ int main()
     Svgfile svgout;
     Pareto pareto;
 
-    int r;
+    int r = 0;
 
     std::cout << "saisir les noms des fichiers" << std::endl;
     //std::cin>>fichier1>>fichier2;
     //graphe g{fichier1, fichier2};
-    graphe g{"triville.txt", "triville_weights_0.txt"};
+    graphe g{"cubetown.txt", "cubetown_weights_0.txt"};
 
-    std::cin>>r;
+    std::cout << "0 : pas de kruskal" << std::endl;
+    std::cout << "1 : kruskal avec poids 1" << std::endl;
+    std::cout << "2 : kruskal avec poids 2" << std::endl;
 
-    std::cout << "ok0" << std::endl;
+    //std::cin>>r;
+
     if(r!=0)
     {
         g.kruskal(r);

@@ -7,7 +7,7 @@
 
 graphe::graphe(std::string fichier1, std::string fichier2)
 {
-    std::cout << "ehoh" << std::endl;
+    //std::cout << "ehoh" << std::endl;
 
     std::ifstream ifs1{fichier1};
     std::ifstream ifs2{fichier2};
@@ -32,7 +32,7 @@ graphe::graphe(std::string fichier1, std::string fichier2)
     float p1, p2;
     ifs2 >> p;
     ifs2 >> p;
-    std::cout << "ehoh77" << std::endl;
+    //std::cout << "ehoh77" << std::endl;
     for (int j = 0; j < taille ; j++)
     {
         ifs1 >> i;
@@ -49,7 +49,7 @@ graphe::graphe(std::string fichier1, std::string fichier2)
         m_arrete.push_back( Arrete{i,x1,x2,y1,y2,p1,p2});
 
     }
-    std::cout << "ehoh33" << std::endl;
+    //std::cout << "ehoh33" << std::endl;
 }
 
 void graphe::dessiner(Svgfile& svgout,int r)
@@ -155,6 +155,7 @@ void graphe::kruskal(int r)
     for(size_t i=0; i<j; i++)
     {
         std::vector<int>sommets2;
+
         if(i>1)
         {
             for (size_t k=0; k<m_sommet.size(); k++)
@@ -309,10 +310,6 @@ void graphe::solution(Svgfile& svgout,Pareto& pareto)
     {
         std::vector<int> sommets2;
         sommets2.push_back(95);
-        for(auto i : per)
-        {
-            //std::cout<< i;
-        }
         poids1 = 0;
         poids2 = 0;
         //std::cout<< std::endl;

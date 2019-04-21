@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1555669074 source:c:\users\hippolyte\desktop\projets2-master\arrete.cpp
+1555758087 source:c:\users\hippolyte\desktop\projets2-master\arrete.cpp
 	"arrete.h"
 	<iostream>
 	"couleur.h"
@@ -31,7 +31,7 @@
 	<random>
 	<string>
 
-1555693625 source:c:\users\hippolyte\desktop\projets2-master\pareto.cpp
+1555791620 source:c:\users\hippolyte\desktop\projets2-master\pareto.cpp
 	"pareto.h"
 	"couleur.h"
 	<iostream>
@@ -50,7 +50,7 @@
 	<iostream>
 	<sstream>
 
-1555693847 source:c:\users\hippolyte\desktop\projets2-master\main.cpp
+1555788480 source:c:\users\hippolyte\desktop\projets2-master\main.cpp
 	<iostream>
 	"graphe.h"
 	"pareto.h"
@@ -79,7 +79,7 @@
 	"util.h"
 	<windows.h>
 
-1555693517 source:c:\users\hippolyte\desktop\projets2-master\graphe.cpp
+1555789019 source:c:\users\hippolyte\desktop\projets2-master\graphe.cpp
 	<fstream>
 	<iostream>
 	<vector>

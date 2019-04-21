@@ -21,7 +21,7 @@ void Arrete::dessiner(Svgfile& svgout)
    int y=((m_y1+m_y2)/2);
    //svgout.addText(x-20,y+10,m_p1,noir);
    //svgout.addText(x-20,y-15,m_p2,noir);
-   svgout.addText(x,y,m_j,vert);
+   svgout.addText(x,y,m_j,"blue");
 }
 
 

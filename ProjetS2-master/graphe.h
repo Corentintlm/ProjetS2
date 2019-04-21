@@ -16,6 +16,7 @@ public:
     std::vector<Arrete> kruskalp2();
     void kruskal(int);
     void solution(Svgfile& svgout,Pareto& pareto);
+    void solution2(Svgfile& svgout,Pareto& pareto);
 protected:
     std::vector<Sommet> m_sommet;
     std::vector<Arrete> m_arrete;

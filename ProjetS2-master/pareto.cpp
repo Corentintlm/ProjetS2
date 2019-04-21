@@ -1,5 +1,6 @@
 #include "pareto.h"
-#include"couleur.h"
+#include "couleur.h"
+#include "algorithm"
 #include <iostream>
 
 Pareto::Pareto(int x, int y)
@@ -89,24 +90,18 @@ void Pareto::dessiner(Svgfile& svgout)
 
 //    std::cout << "plus grand y : " << plusGrandY << std::endl;
 
-    int fe1 = 0;
-    int fe2 = 0;
-
     std::vector<int> optimium;
 
-    i = 0;
     int l = 0;
-    int bzje = 0;
+
     int compt = 0;
-    int op = 0;
+
     for(auto ez : m_poids)
     {
-        bzje++;
-        fe1 = ez[i];
-        fe2 = ez[i+1];
+
         for(auto gg : m_poids)
         {
-            if(((fe1 <= gg[l]) || (fe2 < gg[l+1])) && ((fe1 < gg[l]) || (fe2 <= gg[l+1])))
+            if(((ez[i] <= gg[l]) || (ez[i+1] < gg[l+1])) && ((ez[i] < gg[l]) || (ez[i+1] <= gg[l+1])))
             {
                 compt+=1;
                 l+=2;
@@ -124,7 +119,6 @@ void Pareto::dessiner(Svgfile& svgout)
         {
 //            std::cout << "compt : " << compt << "poids size : " << m_poids.size() << std::endl;
             svgout.addDisk((500/plusPetitX)*ez[i]+50, ((-ez[i+1] + plusPetitY)*10) + 370, 3, "green");
-            op++;
             //std::cout << op << std::endl;
         }
         else

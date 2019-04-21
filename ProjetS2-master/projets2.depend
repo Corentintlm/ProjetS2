@@ -31,9 +31,10 @@
 	<random>
 	<string>
 
-1555856354 source:c:\users\hippolyte\desktop\projets2-master\pareto.cpp
+1555884838 source:c:\users\hippolyte\desktop\projets2-master\pareto.cpp
 	"pareto.h"
 	"couleur.h"
+	"algorithm"
 	<iostream>
 
 1555848083 c:\users\hippolyte\desktop\projets2-master\pareto.h
@@ -50,12 +51,12 @@
 	<iostream>
 	<sstream>
 
-1555856373 source:c:\users\hippolyte\desktop\projets2-master\main.cpp
+1555886426 source:c:\users\hippolyte\desktop\projets2-master\main.cpp
 	<iostream>
 	"graphe.h"
 	"pareto.h"
 
-1555848083 c:\users\hippolyte\desktop\projets2-master\graphe.h
+1555886048 c:\users\hippolyte\desktop\projets2-master\graphe.h
 	"sommet.h"
 	"pareto.h"
 	"svgfile.h"
@@ -79,7 +80,7 @@
 	"util.h"
 	<windows.h>
 
-1555848083 source:c:\users\hippolyte\desktop\projets2-master\graphe.cpp
+1555886232 source:c:\users\hippolyte\desktop\projets2-master\graphe.cpp
 	<fstream>
 	<iostream>
 	<vector>
